@@ -22,8 +22,8 @@ else
      echo "ATTENTION: Pas de différence pour Symtab"
 fi
 
-./mainPrint -x .text $1 >test_logs/ex_x.txt
-./mainPrint -x .text $2 >test_logs/z_x.txt
+./mainPrint -x $3 $1 >test_logs/ex_x.txt
+./mainPrint -x $3 $2 >test_logs/z_x.txt
 
 diff test_logs/ex_x.txt test_logs/z_x.txt >test_logs/xlog.txt
 if [ -s test_logs/xlog.txt ]; then

@@ -64,7 +64,15 @@ void free_reloc(Elf32_Rel **R,Elf32_Ehdr H,Elf32_ShdrNames *Sn)
 
 // Fonction d'affichage
 void print_reloc(FILE *f,Elf32_ShdrNames* Sn,Elf32_SymNames* SymN,Elf32_Ehdr H,Elf32_Rel **R){
-	int l=0;
+	int l=0,k=0;
+	for(int i=0;i<H.e_shnum;i++)
+	{
+		if(Sn[i].S.sh_type==9)
+		{
+			k++;
+		}
+	}
+	if(k!=0){
 	for(int i=0;i<H.e_shnum;i++)
 	{
 		if(Sn[i].S.sh_type==9)
@@ -103,4 +111,6 @@ void print_reloc(FILE *f,Elf32_ShdrNames* Sn,Elf32_SymNames* SymN,Elf32_Ehdr H,E
 		l++;
 		}
 	}
+	}
+	else printf("There are no relocations in this file.\n");
 }

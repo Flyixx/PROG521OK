@@ -22,7 +22,7 @@ void print_sections_hexdump(FILE *f,Elf32_ShdrNames *Sn,Elf32_Ehdr H, char *name
 	else{
 		i = atoi(name);
 	}	
-	if(i<H.e_shnum){
+	if(i<H.e_shnum && Sn[i].S.sh_size !=0){
 		printf("Hex dump of section '%s': \n",Sn[i].name);
 
 		char * Sec;
@@ -74,6 +74,7 @@ void print_sections_hexdump(FILE *f,Elf32_ShdrNames *Sn,Elf32_Ehdr H, char *name
 		printf("\n");
 		free(Sec);
 	}
-	else printf("Ce nom ou cet index de section n'existe pas\n");
+	else if(i>=H.e_shnum){printf("Ce nom ou cet index de section n'existe pas\n");}
+	else{printf("Section '%s' has no data to dump.",Sn[i].name);}
 	printf("\n");
 }
