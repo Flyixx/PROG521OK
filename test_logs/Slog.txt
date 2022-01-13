@@ -1,0 +1,42 @@
+4,23c4,23
+<  1:  00000000      0    SECTION    LOCAL   DEFAULT   1   
+<  2:  00000000      0    SECTION    LOCAL   DEFAULT   3   
+<  3:  00000000      0    SECTION    LOCAL   DEFAULT   5   
+<  4:  00000000      0    NOTYPE     LOCAL   DEFAULT   1   $a
+<  5:  00000008      0    NOTYPE     LOCAL   DEFAULT   3   data_local
+<  6:  00000028      0    NOTYPE     LOCAL   DEFAULT   1   suite
+<  7:  0000002c      0    NOTYPE     LOCAL   DEFAULT   1   $d
+<  8:  00000000      0    NOTYPE     LOCAL   DEFAULT   3   $d
+<  9:  00000018      0    NOTYPE     LOCAL   DEFAULT   3   $a
+< 10:  00000038      0    NOTYPE     LOCAL   DEFAULT   3   fin
+< 11:  00000038      0    NOTYPE     LOCAL   DEFAULT   3   $d
+< 12:  00000000      0    SECTION    LOCAL   DEFAULT   8   
+< 13:  00000000      0    SECTION    LOCAL   DEFAULT  10   
+< 14:  00000000      0    SECTION    LOCAL   DEFAULT   6   
+< 15:  00000000      0    SECTION    LOCAL   DEFAULT  14   
+< 16:  00000000      0    SECTION    LOCAL   DEFAULT  13   
+< 17:  00000000      0    SECTION    LOCAL   DEFAULT  11   
+< 18:  00000000      0    SECTION    LOCAL   DEFAULT  16   
+< 19:  00000004      0    NOTYPE     GLOBAL  DEFAULT   1   main
+< 20:  00000018      0    NOTYPE     GLOBAL  DEFAULT   3   data_global
+---
+>  1:  00000020      0    SECTION    LOCAL   DEFAULT   1   
+>  2:  00002800      0    SECTION    LOCAL   DEFAULT   2   
+>  3:  00000000      0    SECTION    LOCAL   DEFAULT   3   
+>  4:  00000020      0    NOTYPE     LOCAL   DEFAULT   1   $a
+>  5:  00002808      0    NOTYPE     LOCAL   DEFAULT   2   data_local
+>  6:  00000048      0    NOTYPE     LOCAL   DEFAULT   1   suite
+>  7:  0000004c      0    NOTYPE     LOCAL   DEFAULT   1   $d
+>  8:  00002800      0    NOTYPE     LOCAL   DEFAULT   2   $d
+>  9:  00002818      0    NOTYPE     LOCAL   DEFAULT   2   $a
+> 10:  00002838      0    NOTYPE     LOCAL   DEFAULT   2   fin
+> 11:  00002838      0    NOTYPE     LOCAL   DEFAULT   2   $d
+> 12:  00000000      0    SECTION    LOCAL   DEFAULT   5   
+> 13:  00000000      0    SECTION    LOCAL   DEFAULT   6   
+> 14:  00000000      0    SECTION    LOCAL   DEFAULT   4   
+> 15:  00000000      0    SECTION    LOCAL   DEFAULT   9   
+> 16:  00000000      0    SECTION    LOCAL   DEFAULT   8   
+> 17:  00000000      0    SECTION    LOCAL   DEFAULT   7   
+> 18:  00000000      0    SECTION    LOCAL   DEFAULT  10   
+> 19:  00000024      0    NOTYPE     GLOBAL  DEFAULT   1   main
+> 20:  00002818      0    NOTYPE     GLOBAL  DEFAULT   2   data_global
